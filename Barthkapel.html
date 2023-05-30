@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang = "nl">
+
+<head>
+  <title> SBWE </title>
+<!-- Verplichte metatags -->
+      <meta charset = "utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- zoektermen -->
+      <meta name = "keywords" content = "madurodam denhaag attractie">
+      <meta name= "description" content = "Een attractie in Den Haag, waar Nederland in het klein wordt weergegeven">
+      <meta name = "author" content = "Madurodam">
+<!-- Bootstrap-CSS -->
+      <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+          crossorigin="anonymous"
+          >
+<!-- Style CSS-->
+      <link rel="stylesheet" type="text/css" href="css\SBWE.css">
+<!-- Lettertype -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Mogra&family=Oswald&display=swap" rel="stylesheet">
+<!-- Jquery javascript -->
+      <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+      <script type="text/javascript">
+          $(document).ready(function(){
+          $("#knop").click(function(){
+              var naam = $("#naam2").val();
+              window.alert(
+              "Bedankt voor het reserveren van de Barthkapel, " + naam +
+              ". We zullen binnen 4 dagen antwoorden op uw aanvraag. Met vriendelijke groet, SBWE ");
+          });
+          });
+      </script>
+<!--favicon icoon -->
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+
+
+<!--Start middendeel -->
+<body class="container-sm"> <!-- Breekpunt - bepalen van breedte van het beeld scherm -->
+<!--Koptekst-->
+<header>
+  <div class="fs-1">
+      <p> Stichting Behoud Waardevol Erfgoed </p>
+        <ul class="nav justify-content fs-5">
+                  <li class="nav-item">
+                    <a class="nav-link" href="Index.html">Home</a>
+                  </li>
+                  <!-- inclusief dropdown-->
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="Barthkapel.html" role="button" aria-expanded="false">Barthkapel CC</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="HomeCC.html">Home CC</a></li>
+                              <li><a class="dropdown-item" href="ReserveringBK.html">Reserveren Barthkapel</a></li>
+                              <li><a class="dropdown-item" href="Huurders.html">Huurders</a></li>
+                              <li><a class="dropdown-item" href="Plattegrond.html">Plattegrond</a></li>
+                          </ul>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Projecten.html">Projecten</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                  </li>
+        </ul>
+  </div>
+</header>
+
+<!--Middenstuk -->
+    <div id="content">
+
+    <!--2e deel - audio deel -->
+    <!--audio element heeft de volgende kenmerken: 1. src, 2. controls (afspeel, pauze knop ed.), 3.autoplay (automatische start, 4.loop (auto opnieuw spelen) -->
+
+          <section class = "col-12">
+              <h1>Impressie van de ruimte </h1>
+              <audio controls
+              src="vid/IMG_1954.mov" autoplay></audio>
+
+    <!--3e deel - film-->
+    <!--video element heeft de volgende kenmerken:
+     1. src,
+     2. controls (afspeel, pauze knop ed.),
+     3. autoplay (automatische start,
+     4. loop (auto opnieuw spelen)
+     5. width en height
+     6. poster (een standaard afbeelding ipv de video)-->
+
+        <section class = "col-12">
+          <h1>Barthkapel</h1>
+          <video controls src="vid/IMG_1954.mov" poster="img/Kapel4_9.jpg"
+          width="500" height="400"></video>
+        </section>
+        </section>
+        </section>
+</div> <!--afsluiting van id content-->
+
+            <!--footer -->
+                                <div class = "col-12" >
+                                      <div id="menu">
+                                        <p> @2023 Stichting Behoud Waardevol Erfgoed  </p>
+                                      </div>
+                                </div>
+
+
+<!-- Bootstrap-JavaScript-->
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous">
+      </script>
+
+<!-- No script - JavaScript-->
+
+      <noscript> Om deze website optimaal te gebruiken is het noodzakelijk om Javascript te activeren.
+      </noscript>
+
+</body> <!--  & Breekpunt - afsluiting breedte van het beeld scherm "class = container-sm"-->
+</html>
